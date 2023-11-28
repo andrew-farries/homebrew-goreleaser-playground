@@ -5,20 +5,20 @@
 class GoreleaserPlayground < Formula
   desc "Goreleaser playground"
   homepage "https://github.com/andrew-farries/goreleaser-playground"
-  version "0.2.4"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Darwin_arm64.tar.gz"
-      sha256 "be4a9b651bbee7351dc39bf7fe2e75d33c83f1b0902c1df372597d076c2e0318"
+      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.3/goreleaser-playground_Darwin_arm64.tar.gz"
+      sha256 "63b6b2b33bc429bb20141c491dd347eade08ee7826f197bc75611bfe9c458ecc"
 
       def install
         bin.install "goreleaser-playground"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Darwin_x86_64.tar.gz"
-      sha256 "3fa4ce7b4c7f7fdbd75c118709348638c95989e49b87010ded76422e6ca86881"
+      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.3/goreleaser-playground_Darwin_x86_64.tar.gz"
+      sha256 "d0429f29254b38f6859cbb9956f38730dec5c76e4f385845ba36460722159ffc"
 
       def install
         bin.install "goreleaser-playground"
@@ -28,16 +28,16 @@ class GoreleaserPlayground < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Linux_x86_64.tar.gz"
-      sha256 "0f018ab09170b42dc4004de5f19f9373438282f8b3cd97691ded8a4de5870383"
+      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.3/goreleaser-playground_Linux_x86_64.tar.gz"
+      sha256 "90e494357471e9d08135eb29d3e597aa2cc0344861bd63ec942065bf88e3fbcd"
 
       def install
         bin.install "goreleaser-playground"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Linux_arm64.tar.gz"
-      sha256 "b033be4f605ec76faffcdebc8ae53689799af90702486ee85c9bb0e268f90d5b"
+      url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.3/goreleaser-playground_Linux_arm64.tar.gz"
+      sha256 "ccb1cf248d81812cc6bbaf960d6f770229393fdb1cd37e346e984361deae397f"
 
       def install
         bin.install "goreleaser-playground"
