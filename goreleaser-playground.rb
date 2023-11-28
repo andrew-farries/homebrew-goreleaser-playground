@@ -10,7 +10,7 @@ class GoreleaserPlayground < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Darwin_arm64.tar.gz"
-      sha256 "b2dacb1e37e071d853996f8b4ad15995b3f6b286bc114f1c9f548f47b2f1faff"
+      sha256 "be4a9b651bbee7351dc39bf7fe2e75d33c83f1b0902c1df372597d076c2e0318"
 
       def install
         bin.install "goreleaser-playground"
@@ -18,7 +18,7 @@ class GoreleaserPlayground < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Darwin_x86_64.tar.gz"
-      sha256 "18a66530e281a324037087f9f06eb7558c96998e118787d38987dde0bc207f7f"
+      sha256 "3fa4ce7b4c7f7fdbd75c118709348638c95989e49b87010ded76422e6ca86881"
 
       def install
         bin.install "goreleaser-playground"
@@ -29,7 +29,7 @@ class GoreleaserPlayground < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Linux_x86_64.tar.gz"
-      sha256 "da1a3ec9673b5fb72257eb801125c0020a5f89ac4290d31d14c04f815dd83c6e"
+      sha256 "0f018ab09170b42dc4004de5f19f9373438282f8b3cd97691ded8a4de5870383"
 
       def install
         bin.install "goreleaser-playground"
@@ -37,7 +37,7 @@ class GoreleaserPlayground < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/andrew-farries/goreleaser-playground/releases/download/v0.2.4/goreleaser-playground_Linux_arm64.tar.gz"
-      sha256 "7d2fea6c1c31eab687183f89ec5dcbe15b333d04724813f8bda6aff46fafd977"
+      sha256 "b033be4f605ec76faffcdebc8ae53689799af90702486ee85c9bb0e268f90d5b"
 
       def install
         bin.install "goreleaser-playground"
